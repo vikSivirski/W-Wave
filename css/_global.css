@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  img, svg {
+    box-sizing: inherit;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  body {
+    font-family: "Muller", sans-serif;
+  }
+
+  .container {
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .flex {
+    display: flex
+  }
+
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+

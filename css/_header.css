@@ -1,0 +1,111 @@
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px;
+}
+
+.header_logo {
+  height: 20px;
+}
+
+.header__menu {
+  font-weight: var(--regular);
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.header__item:not(:last-child) {
+  margin-right: 59px;
+}
+
+.header__search-btn {
+  vertical-align: middle;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.header__account-btn {
+  padding: 11px 31px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: 2px solid var(--black);
+  border-radius: 77px;
+}
+
+.subheader {
+  border-top: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--lightGray);
+}
+
+.subheader__container {
+  padding: 0;
+}
+
+.subheader__nav {
+  padding: 10px 0;
+}
+
+.subheader__menu {
+  align-items: center;
+  margin-right: 52px;
+}
+
+.subheder__item:not(:last-child) {
+  margin-right: 53px;
+}
+
+.subheader__audio {
+  margin-right: 52px;
+}
+
+.subheader__audio-item {
+  width: 174px;
+  padding: 0 12px;
+}
+
+.subheader__audio-item:first-child {
+  border-left: 1px solid var(--lightGray);
+}
+
+.subheader__audio-item:last-child {
+  border-right: 1px solid var(--lightGray);
+  border-left: 1px solid var(--lightGray);
+}
+
+.subheader__audio-btn {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.subheader__audio-text {
+  margin-bottom: 5px;
+  font-weight: var(--regular);
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--gray);
+}
+
+.subheader__audio-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.subheader__age {
+  max-width: 46px;
+  width: 100%;
+  background-color: var(--lightGray);
+}
+
+.subheder__audio-descr {
+  flex-direction: column;
+}
+
+.subheader__age {
+  align-items: center;
+}
