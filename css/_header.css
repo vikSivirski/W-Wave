@@ -1,7 +1,8 @@
 .header__container {
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header_logo {
@@ -37,10 +38,6 @@
 .subheader {
   border-top: 1px solid var(--lightGray);
   border-bottom: 1px solid var(--lightGray);
-}
-
-.subheader__container {
-  padding: 0;
 }
 
 .subheader__nav {

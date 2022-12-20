@@ -1,7 +1,11 @@
 :root {
+  --bold: 700;
+  --medium: 500;
   --regular: 400;
 
   --black: #121723;
+  --violet: #6D31EE;
+  --white: #fff;
   --lightGray: #E6E8EC;
   --gray: #A1A6B4;
 }
