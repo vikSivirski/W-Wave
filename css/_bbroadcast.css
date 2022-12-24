@@ -1,0 +1,28 @@
+.broadcast {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.broadcast__title {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.broadcast__content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.broadcast__select-wrap {
+  width: calc(255 / 1110 * 100%);
+}
+
+.broadcast__list {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: calc(825 / 1110 * 100%);
+}
+
+.broadcast__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}

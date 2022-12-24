@@ -1,40 +1,48 @@
 html {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  img, svg {
-    box-sizing: inherit;
-    width: 100%;
-  }
+img,
+svg {
+  box-sizing: inherit;
+  width: 100%;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  body {
-    font-family: "Muller", sans-serif;
-  }
+body {
+  font-family: "Muller", sans-serif;
+}
 
-  .flex {
-    display: flex
-  }
+.flex {
+  display: flex
+}
 
-  .list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  .btn-reset {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--black);
+}
