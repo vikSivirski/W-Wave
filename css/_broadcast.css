@@ -1,0 +1,111 @@
+.broadcast {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.broadcast__title {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.broadcast__content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.broadcast__autors-wrap {
+  z-index: 0;
+  width: calc(255 / 1110 * 100%);
+}
+
+.broadcast__autors-descr {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+}
+
+.broadcast__select-wrap {
+  z-index: 10;
+}
+
+.choices .choices__inner {
+  z-index: 10;
+  background-color: var(--lightGray);
+  border: none;
+  border-radius: 10px;
+}
+
+.choices .choices__inner:hover {
+  background-color: #ececec;
+}
+
+.choices:focus-visible .choices__inner  {
+  border: none;
+  background-color: #ececec;
+}
+
+.choices__list--dropdown .choices__placeholder {
+	display: none;
+}
+
+.choices__placeholder{
+  opacity: 1;
+}
+
+.choices__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--textBlack);
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  top: 37px;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+  border: none;
+}
+
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 0;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 10px 15px;
+}
+
+.is-active{
+  padding-top: 10px;
+}
+
+.choices[data-type*=select-one]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  margin-top: 0;
+  border-width: 0;
+  border-right: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: 0;
+  border-color: var(--gray);
+  transform: rotate(225deg);
+}
+
+.broadcast__list {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: calc(825 / 1110 * 100%);
+}
+
+.broadcast__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}

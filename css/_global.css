@@ -23,6 +23,14 @@ body {
   font-family: "Muller", sans-serif;
 }
 
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .flex {
   display: flex
 }

@@ -24,3 +24,11 @@ moreBtn.addEventListener('click', function () {
 
 // const render = (counter, likeCounter) => likeCounter.innerText = counter;
 
+const element = document.querySelector('.broadcast__select');
+const choices = new Choices(element, {
+
+  searchEnabled: false,
+  itemSelectText: '',
+
+});
+

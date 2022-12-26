@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <title>W-Wave Радио</title>
 </head>
 
@@ -745,18 +745,20 @@
 
   <section class="broadcast" id="broadcast">
     <div class="container">
-      <h2 class="broadcast__title title">Передачи</h2>
       <div class="broadcast__content flex">
-        <div class="broadcast__select-wrap">
-          <p class="broadcast__select-descr">Автор:</p>
-            <select name="Автор" class="broadcast__select">
-              <option value="Дмитрий Гутуенберг" class="broadcast__select-item">Дмитрий Гутуенберг</option>
-              <option value="Татьяна Флеганова" class="broadcast__select-item">Татьяна Флеганова</option>
-              <option value="Анна Васильева" class="broadcast__select-item">Анна Васильева</option>
-              <option value="Пётр Дмитриевский" class="broadcast__select-item">Пётр Дмитриевский</option>
-            </select>
+        <div class="broadcast__autors-wrap">
+          <h2 class="broadcast__title title">Передачи</h2>
+          <p class="broadcast__autors-descr">Автор:</p>
+            <div class="broadcast__select-wrap">
+              <select name="Автор" class="broadcast__select">
+                <option value="Дмитрий Гутуенберг" class="broadcast__select-item">Дмитрий Гутуенберг</option>
+                <option value="Татьяна Флеганова" class="broadcast__select-item">Татьяна Флеганова</option>
+                <option value="Анна Васильева" class="broadcast__select-item">Анна Васильева</option>
+                <option value="Пётр Дмитриевский" class="broadcast__select-item">Пётр Дмитриевский</option>
+              </select>
+            </div>
           <div class="broadcast__archive">
-            <button class="broadcast__btn btn-reset">Архив</button>
+            <a href="#" class="broadcast__btn btn-reset">Архив</a>
             <p class="broadcast__archive-hint">В архив попадают все передачи, которые вы пропустили! Enjoy:)</p>
           </div>
         </div>
@@ -857,6 +859,7 @@
     </div>
   </section>
 
+  <script src="scripts/choices.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
