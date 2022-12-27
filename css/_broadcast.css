@@ -14,36 +14,33 @@
 }
 
 .broadcast__autors-wrap {
-  z-index: 0;
+  flex-direction: column;
+  justify-content: space-between;
   width: calc(255 / 1110 * 100%);
 }
 
-.broadcast__autors-descr {
-  margin: 0;
-  margin-bottom: 8px;
+.broadcast__select-label {
   font-size: 16px;
   line-height: 16px;
   color: var(--gray);
 }
 
-.broadcast__select-wrap {
-  z-index: 10;
-}
-
 .choices .choices__inner {
-  z-index: 10;
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
   background-color: var(--lightGray);
   border: none;
   border-radius: 10px;
 }
 
 .choices .choices__inner:hover {
-  background-color: #ececec;
+  background-color: var(--whiteGray);
 }
 
-.choices:focus-visible .choices__inner  {
-  border: none;
-  background-color: #ececec;
+.choices:focus .choices__inner {
+  border: 1px solid var(--violet);
+  background-color: var(--darkWhiteGray);
 }
 
 .choices__list--dropdown .choices__placeholder {
@@ -56,9 +53,9 @@
 
 .choices__item {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--textBlack);
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black);
 }
 
 .choices__list--dropdown, .choices__list[aria-expanded] {
@@ -73,24 +70,32 @@
 }
 
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
-  padding: 10px 15px;
+  padding: 12px;
+  border: 1px solid #D2D5DD;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item:first-child {
+  padding-top: 28px;
+  border: 1px solid #D2D5DD;
 }
 
 .is-active{
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .choices[data-type*=select-one]::after {
   content: "";
   position: absolute;
+  z-index: 2;
   top: 50%;
+  bottom: 50%;
   right: 15px;
   width: 8px;
   height: 8px;
-  margin-top: 0;
+  margin-top: 4px;
   border-width: 0;
-  border-right: 1px solid #666666;
-  border-bottom: 1px solid #666666;
+  border-right: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   transform: rotate(45deg) translate(-50%, -50%);
 }
 
@@ -108,4 +113,77 @@
 
 .broadcast__item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+
+.broadcast__archive {
+  padding-top: 113px;
+  background-image: url("../img/broadcast-mic.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.broadcast__btn {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 12px 56px;
+  font-weight: var(--medium);
+  font-size: 16px;
+  line-height: 16px;
+  border: 2px solid var(--black);
+  border-radius: 77px;
+}
+
+.broadcast__archive-hint {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+
+.broadcast__list {
+  margin-top: 15px;
+  margin-bottom: -30px;
+}
+
+.broadcast__item {
+  margin-bottom: 30px;
+  height: 260px;
+}
+
+.broadcast__img-wrap {
+  height: 148px;
+}
+
+.broadcast__card-content {
+  padding: 17px 16px;
+  outline: 1px solid var(--lightGray);
+}
+
+.broadcast__name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: var(--medium);
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.broadcast__announce {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--gray);
+}
+
+.broadcast__more {
+  align-items: center;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.broadcast__more svg {
+  max-width: 28px;
 }

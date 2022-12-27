@@ -29,6 +29,7 @@ const choices = new Choices(element, {
 
   searchEnabled: false,
   itemSelectText: '',
+  // placeholder: true,
 
 });
 

@@ -746,19 +746,21 @@
   <section class="broadcast" id="broadcast">
     <div class="container">
       <div class="broadcast__content flex">
-        <div class="broadcast__autors-wrap">
+        <div class="broadcast__autors-wrap flex">
+          <div class="broadcast__select-wrap">
           <h2 class="broadcast__title title">Передачи</h2>
-          <p class="broadcast__autors-descr">Автор:</p>
-            <div class="broadcast__select-wrap">
-              <select name="Автор" class="broadcast__select">
-                <option value="Дмитрий Гутуенберг" class="broadcast__select-item">Дмитрий Гутуенберг</option>
-                <option value="Татьяна Флеганова" class="broadcast__select-item">Татьяна Флеганова</option>
-                <option value="Анна Васильева" class="broadcast__select-item">Анна Васильева</option>
-                <option value="Пётр Дмитриевский" class="broadcast__select-item">Пётр Дмитриевский</option>
-              </select>
+            <label for="select" class="broadcast__select-label">
+              Автор:
+                <select name="Автор" class="broadcast__select">
+                  <option value="Дмитрий Гутенберг" class="broadcast__select-item placeholder">Дмитрий Гутенберг</option>
+                  <option value="Татьяна Флеганова" class="broadcast__select-item">Татьяна Флеганова</option>
+                  <option value="Анна Васильева" class="broadcast__select-item">Анна Васильева</option>
+                  <option value="Пётр Дмитриевский" class="broadcast__select-item">Пётр Дмитриевский</option>
+                </select>
+              </label>
             </div>
           <div class="broadcast__archive">
-            <a href="#" class="broadcast__btn btn-reset">Архив</a>
+            <a href="#" class="broadcast__btn">Архив</a>
             <p class="broadcast__archive-hint">В архив попадают все передачи, которые вы пропустили! Enjoy:)</p>
           </div>
         </div>
@@ -769,7 +771,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">О людях и книгах</h3>
               <p class="broadcast__announce">Анонсируется отдельно</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -784,7 +786,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">Графомания td</h3>
               <p class="broadcast__announce">По понедельникам в 10:00</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -799,7 +801,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">Не Рим, не Троя</h3>
               <p class="broadcast__announce">По вторникам в 12:00</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -814,7 +816,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">Эрудит</h3>
               <p class="broadcast__announce">По пятницам в 17:00</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -829,7 +831,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">Тонкости эпох</h3>
               <p class="broadcast__announce">По субботам в 10:00</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -844,7 +846,7 @@
             <div class="broadcast__card-content">
               <h3 class="broadcast__name">Живые мысли</h3>
               <p class="broadcast__announce">По воскресеньям в 15:30</p>
-              <a href="#" class="broadcast__more">
+              <a href="#" class="broadcast__more flex">
                 Подробнее
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
