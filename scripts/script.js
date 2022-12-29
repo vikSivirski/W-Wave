@@ -33,3 +33,21 @@ const choices = new Choices(element, {
 
 });
 
+let btnTabs = document.querySelectorAll('.tab-btn');
+let itemTabs = document.querySelectorAll('.guests__tabs-item');
+
+btnTabs.forEach(function(element) {
+  element.addEventListener('click', function(e) {
+
+    const path = e.currentTarget.dataset.path;
+
+    btnTabs.forEach(function(btn){ btn.classList.remove('tab-btn--active')});
+    e.currentTarget.classList.add('tab-btn--active');
+
+    itemTabs.forEach(function(element){ element.classList.remove('guests__tabs-item--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('guests__tabs-item--active');
+  })
+});
+
+new Accordion('.accordion-container');
+
