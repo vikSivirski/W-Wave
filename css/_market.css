@@ -1,0 +1,63 @@
+.market {
+  padding-top: 92px;
+  padding-bottom: 92px;
+  background-color: var(--black);
+}
+
+.market__container {
+  justify-content: space-between;
+}
+
+.market__img-wrap {
+  display: block;
+  width: calc(640 / 1110 * 100%);
+  max-height: 562px;
+}
+
+.market__descr {
+  width: calc(445 / 1110 * 100%);
+}
+
+.market__title {
+  padding-bottom: 29px;
+  margin-bottom: 19px;
+  color: var(--gold);
+}
+
+.market__text {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 180%;
+  color: white;
+}
+
+.market__text:last-child {
+  margin-bottom: 30px;
+}
+
+.market__price {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: var(--medium);
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+}
+
+.market__link {
+  display: inline-block;
+  padding: 25px 13px;
+  font-weight: var(--medium);
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 100px;
+}
+
+.market__link-svg {
+  vertical-align: middle;
+  width: 21px;
+  height: 20px;
+}
