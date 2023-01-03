@@ -1,7 +1,7 @@
 .market {
   padding-top: 92px;
   padding-bottom: 92px;
-  background-color: var(--black);
+  background-color: var(--lightBlack);
 }
 
 .market__container {

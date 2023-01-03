@@ -51,3 +51,15 @@ btnTabs.forEach(function(element) {
 
 new Accordion('.accordion-container');
 
+const swiper = new Swiper('.swiper', {
+
+  loop: false,
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
