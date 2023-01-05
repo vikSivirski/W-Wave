@@ -5,10 +5,11 @@
 
 .hero__content {
   padding: 62px 475px 53px 0;
+  padding-right: calc(475 / 1110 * 100%);
   background-image: url("../img/microphone.png");
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: contain;
+  background-size: inherit;
 }
 
 .hero__title {

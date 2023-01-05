@@ -13,7 +13,8 @@
   margin-right: 30px;
 }
 
-.playlists__checkbox-container {
+.playlists__checkbox-list {
+  flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 38px;
   border-bottom: 1px solid var(--gray);
@@ -25,18 +26,22 @@
 
 .playlists__genres {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   color: var(--gray);
 }
 
+.playlists__checkbox-item {
+  margin-bottom: 18px;
+}
+
 .playlists__checkbox-wrap {
   position: relative;
-  margin-bottom: 18px;
+  padding-left: 45px;
+  flex-shrink: 0;
   font-size: 20px;
   line-height: 20px;
-  padding-left: 45px;
   color: var(--black);
   cursor: pointer;
 }
@@ -63,9 +68,9 @@
 }
 
 .playlists__item {
+  width: 100%;
   max-width: 160px;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .playlists__item:not(:nth-child(4n)) {
@@ -117,4 +122,9 @@
 
 .min-age {
   width: 30px;
+}
+
+
+.playlists__warning-wrap--media {
+  display: none;
 }

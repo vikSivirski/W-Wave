@@ -1,0 +1,203 @@
+@media (max-width: 1200px) {
+
+  .header__container--media {
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .header_logo {
+    display: none;
+  }
+
+  .header_logo--media {
+    max-width: 112px;
+    height: 20px;
+  }
+
+  .subheader__nav {
+    padding: 12px 0;
+  }
+
+  .subheader__menu {
+    max-width: 490px;
+    margin-right: 34px;
+  }
+
+  .subheader__audio {
+    margin-right: 0;
+  }
+
+  .subheader__audio-item {
+    padding: 0 10px;
+    width: 150px;
+  }
+
+  .subheader__audio-btn {
+    margin-right: 8px;
+  }
+
+  .subheader__age {
+    display: none;
+  }
+
+  /*hero*/
+
+  .hero__content {
+    padding: 60px 286px 45px 0;
+    background-image: url("../img/microphone-1024.png");
+  }
+
+  .hero__text {
+    margin-bottom: 20px;
+  }
+
+  /*broadcast*/
+
+  .broadcast__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .broadcast__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .broadcast__autors-wrap {
+    max-height: 564px;
+  }
+
+  /*guests*/
+
+  .guests {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .guests__text {
+    max-width: 536px;
+  }
+
+  .acordion__item-content-wrap {
+    columns: 3;
+  }
+
+  .guests__tabs-content {
+    max-width: 255px;
+  }
+
+  .guests__socials-item {
+    margin-right: 35px;
+  }
+
+  .guests__photo-wrap {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .guests__ether {
+    display: inline-block;
+    padding: 12px 18px;
+    font-weight: var(--medium);
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--lightViolet);
+    border: 2px solid var(--lightViolet);
+    border-radius: 77px;
+  }
+
+  /*playlists*/
+
+  .playlists-container {
+    flex-direction: column;
+  }
+
+  .playlists__content {
+    max-width: 325px;
+  }
+
+  .playlists__checkbox-list {
+    columns: 2;
+    margin-bottom: 12px;
+  }
+
+  .playlists__checkbox-item {
+    margin-bottom: 25px;
+  }
+
+  .playlists__checkbox-wrap {
+    padding-left: 42px;
+  }
+
+  .playlists__warning-wrap {
+    display: none;
+  }
+
+  .playlists__warning-wrap--media {
+    display: block;
+  }
+
+  .playlists__list {
+    max-width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 37px;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .playlists__item {
+    display: flex;
+    width: 100%;
+    max-width: 255px;
+    margin-bottom: 25px;
+  }
+
+  .playlists__item:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+
+  .playlists__item:not(:nth-child(3n)) {
+    margin-right: 29px;
+  }
+
+  .playlists__img-wrap {
+    flex-shrink: 0;
+    max-width: 112px;
+  }
+
+  .playlists__item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-height: 112px;
+    padding: 10px 5px 10px 10px;
+  }
+
+  /*market*/
+
+  .market__container {
+    align-items: center;
+  }
+
+  .market__img-wrap {
+    display: block;
+    width: calc(397 / 823 * 100%);
+    max-height: 562px;
+    padding-bottom: 30px;
+  }
+
+  .market__descr {
+    width: calc(396 / 823 * 100%);
+    max-width: 396px;
+  }
+
+  /*about*/
+
+  .about__form {
+    width: 100%;
+  }
+
+  .about__descr {
+    padding-right: calc(285 / 823 * 100%);
+    margin-bottom: 30px;
+  }
+}

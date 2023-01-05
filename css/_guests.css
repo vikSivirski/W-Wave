@@ -5,10 +5,13 @@
 }
 
 .guests__title {
+  margin-bottom: 12px;
   color: white;
 }
 
 .guests__enumeration {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: var(--bold);
   font-size: 20px;
   line-height: 150%;
@@ -16,6 +19,8 @@
 }
 
 .guests__text {
+  margin: 0;
+  margin-bottom: 51px;
   font-size: 20px;
   line-height: 160%;
   color: var(--gray);
@@ -115,7 +120,6 @@
   display: block;
 }
 
-
 .guests__socials-item {
   margin-right: 30px;
 }
@@ -155,6 +159,7 @@
   line-height: 20px;
   color: white;
 }
+
 .guests__descr {
   margin: 0;
   margin-bottom: 30px;
@@ -162,6 +167,7 @@
   line-height: 180%;
   color: var(--gray);
 }
+
 .guests__ether {
   display: inline-block;
   padding: 12px 19px;

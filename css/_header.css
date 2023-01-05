@@ -1,3 +1,10 @@
+.header__container--media {
+  display: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: var(--podcastsGray);
+}
+
 .header__container {
   justify-content: space-between;
   align-items: center;
@@ -10,15 +17,17 @@
 }
 
 .header__menu {
+  width: 639px;
+  justify-content: space-between;
   font-weight: var(--regular);
   font-size: 20px;
   line-height: 20px;
   color: var(--black);
 }
 
-.header__item:not(:last-child) {
+/* .header__item:not(:last-child) {
   margin-right: 59px;
-}
+} */
 
 .header__search-btn {
   vertical-align: middle;
@@ -41,16 +50,17 @@
 }
 
 .subheader__nav {
+  width: 100%;
+  justify-content: space-between;
   padding: 10px 0;
 }
 
 .subheader__menu {
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 611px;
   margin-right: 52px;
-}
-
-.subheder__item:not(:last-child) {
-  margin-right: 53px;
 }
 
 .subheader__audio {

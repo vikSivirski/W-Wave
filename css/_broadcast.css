@@ -16,7 +16,8 @@
 .broadcast__autors-wrap {
   flex-direction: column;
   justify-content: space-between;
-  width: calc(255 / 1110 * 100%);
+  width: 100%;
+  max-width: 255px;
 }
 
 .broadcast__select-label {
