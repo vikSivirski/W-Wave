@@ -110,6 +110,13 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   width: calc(825 / 1110 * 100%);
+  margin-top: 15px;
+  margin-bottom: -30px;
+}
+
+.broadcast__item {
+  margin-bottom: 30px;
+  height: 260px;
 }
 
 .broadcast__item:not(:nth-child(3n)) {
@@ -141,15 +148,6 @@
   color: var(--gray);
 }
 
-.broadcast__list {
-  margin-top: 15px;
-  margin-bottom: -30px;
-}
-
-.broadcast__item {
-  margin-bottom: 30px;
-  height: 260px;
-}
 
 .broadcast__img-wrap {
   height: 148px;

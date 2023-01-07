@@ -1,3 +1,14 @@
+const burger = document.querySelector('.hamburger');
+const menu = document.querySelector('.header__nav');
+
+burger.addEventListener('click', function() {
+
+  burger.classList.toggle('is-active');
+  menu.classList.toggle('header__nav--active');
+
+})
+
+
 const moreBtn = document.querySelector('.podcasts__more');
 const podcasts = document.querySelectorAll('.podcasts__item');
 
@@ -11,18 +22,6 @@ moreBtn.addEventListener('click', function () {
 
 })
 
-// const like = document.querySelectorAll('.podcasts__reaction-btn');
-
-// like.forEach(likeEl => {
-//   const likeCounter = document.querySelector('.podcasts__readtion-counter');
-//   let counter = 0;
-
-//   likeEl.addEventListener('click', function () {
-//     render(++counter, likeCounter);
-//   });
-// });
-
-// const render = (counter, likeCounter) => likeCounter.innerText = counter;
 
 const element = document.querySelector('.broadcast__select');
 const choices = new Choices(element, {
@@ -64,7 +63,11 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
 
-    1024: {
+    1025: {
+      slidesPerView: 4,
+    },
+
+    768: {
       slidesPerView: 2,
     }
 
