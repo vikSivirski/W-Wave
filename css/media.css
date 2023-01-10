@@ -492,3 +492,52 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 610px) {
+
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  /*header*/
+
+  .header__nav {
+    padding: 61px 32px;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header__container--media {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_logo--media {
+    max-width: 87px;
+  }
+
+  .header__account-btn {
+    display: none;
+  }
+
+  .header__account-btn--media {
+    display: block;
+    padding: 9px 24px;
+  }
+
+  .subheader__menu {
+    display: none;
+  }
+
+  .subheader__menu--media {
+    position: absolute;
+    left: 0;
+    top: 225px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+  }
+}
