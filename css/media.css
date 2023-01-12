@@ -253,21 +253,24 @@
 
   }
 
-  .header__nav {
+  .header__nav-wrap {
     position: absolute;
     top: 58px;
     left: 0;
     width: 100%;
     height: 100vh;
-    max-width: 100%;
-    margin-right: 0;
-    padding: 106px 114px;
-    background-color: var(--menuGray);
     transform: translateY(-200%);
     transition: transform 0.4s ease-in-out;
   }
 
-  .header__nav--active {
+  .header__nav {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 106px 114px;
+    background-color: var(--menuGray);
+  }
+
+  .header__nav--active{
     transform: translateY(0);
   }
 
@@ -502,19 +505,28 @@
 
   /*header*/
 
-  .header__nav {
-    padding: 61px 32px;
-    flex-direction: column;
-    height: 100vh;
+  .header__container--media {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  .header__container--media {
-    justify-content: space-between;
-    align-items: center;
+  .header__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .header_logo--media {
     max-width: 87px;
+  }
+
+  .header__container--media {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__search-btn {
+    margin-right: 0;
   }
 
   .header__account-btn {
@@ -523,21 +535,189 @@
 
   .header__account-btn--media {
     display: block;
-    padding: 9px 24px;
+    padding: 8px 24px;
+  }
+
+
+  .header__nav {
+    flex-direction: column;
+    padding: 61px 32px;
   }
 
   .subheader__menu {
     display: none;
   }
 
+  .subhesder__audio-btn {
+    display: none;
+  }
+
   .subheader__menu--media {
-    position: absolute;
-    left: 0;
-    top: 225px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    column-count: 2;
+    height: 37%;
+    padding: 30px 32px;
     background-color: white;
+  }
+
+  .subheder__item {
+    margin-bottom: 30px;
+  }
+
+  .subheader__nav {
+    padding: 0;
+  }
+
+  .subheader__container {
+    padding: 0;
+  }
+
+  .header__accordion-btn {
+    width: 100%;
+    padding: 12px 32px;
+    margin-bottom: -1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--violet);
+    border-bottom: 1px solid var(--lightGray);
+  }
+
+  .header__accordion-svg {
+    max-width: 15px;
+  }
+
+  .header__ac-title {
+    margin: 0;
+  }
+
+  .accordion-container {
+    margin-bottom: 0;
+  }
+
+  .header__acordion-content {
+    overflow: hidden;
+  }
+
+  .subheader__audio-acordion {
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: 9px;
+  }
+
+  .subheader__audio-item {
+    flex-direction: column;
+    padding-bottom: 6px;
+  }
+
+  .subheader__audio-item:first-child {
+    border-left: none;
+  }
+
+  .subheader__audio-item:last-child {
+    border-right: none;
+  }
+
+  .subheader__audio-btn {
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+
+  /*hero*/
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero__content {
+    padding: 0;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 8px;
+  }
+
+  .hero__title--italic {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .hero__link {
+    padding: 17px 45px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  /*podcasts*/
+
+  .podcasts {
+    padding-top: 54px;
+  }
+
+  .podcasts__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .podcasts__list {
+    margin-bottom: 0;
+  }
+
+  .podcasts__item {
+    height: auto;
+  }
+
+  .podcasts__descr-wrap {
+    padding: 15px;
+  }
+
+  .podcasts__play-btn {
+    max-width: 36px;
+  }
+
+  .podcasts__item:nth-child(n + 5) {
+    display: none;
+  }
+
+  .podcasts__item--visible:nth-child(n + 5) {
+    display: block;
+  }
+
+  .podcasts__content-wrap {
+    flex-direction: column;
+  }
+
+  .podcasts__img-wrap {
+    max-height: 72px;
+  }
+
+  .podcasts__name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .podcasts__autor {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .podcasts__reaction {
+    padding: 5px 34px;
+    border-top: 1px solid var(--lightGray);
+  }
+
+  .podcasts__more {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }

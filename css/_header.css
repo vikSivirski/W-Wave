@@ -38,6 +38,10 @@
   flex-shrink: 0;
 }
 
+.header__account-btn--media {
+  display: none;
+}
+
 .header__search-btn {
   vertical-align: middle;
   height: 24px;
@@ -71,6 +75,8 @@
   max-width: 611px;
   margin-right: 52px;
 }
+
+.subheader__menu--media
 
 .subheader__audio {
   margin-right: 52px;
