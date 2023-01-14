@@ -48,7 +48,9 @@ btnTabs.forEach(function(element) {
   })
 });
 
-new Accordion('.accordion-container');
+new Accordion('.guests__accordion');
+
+new Accordion('.subheader__accordion')
 
 const swiper = new Swiper('.swiper', {
 

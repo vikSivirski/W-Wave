@@ -660,6 +660,7 @@
 
   .podcasts {
     padding-top: 54px;
+    padding-bottom: 54px;
   }
 
   .podcasts__title {
@@ -719,5 +720,243 @@
     padding: 15px 30px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  /*broadcasts*/
+
+  .broadcast {
+    padding-top: 54px;
+    padding-bottom: 29px;
+  }
+
+  .broadcast__title {
+    display: block;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .broadcast__select-label {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__list {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .broadcast__item {
+    width: 100%;
+    max-width: 113px;
+    height: auto;
+  }
+
+  .broadcast__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .broadcast__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .broadcast__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .broadcast__img-wrap {
+    display: block;
+    height: 50px;
+  }
+
+  .broadcast__card-content {
+    min-height: 99px;
+    padding: 10px;
+  }
+
+  .broadcast__name {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__announce {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .broadcast__more {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__archive--media {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    background-image: url("../img/broadcast-mic.png");
+    background-size: contain;
+  }
+
+  .broadcast__archive-hint {
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .broadcast__btn {
+    max-width: 110px;
+    padding: 8px 31px;
+    margin-bottom: 0;
+  }
+
+  /*guests*/
+
+  .guests {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .guests__title {
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .guests__enumeration {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .guests__text {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 28px;
+  }
+
+  .guests__accordion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .acordeon__item--historians {
+    order: -1;
+  }
+
+  .acordeon__item--blogers {
+    display: none;
+  }
+
+  .acordion__item-content-wrap {
+    padding: 20px 0 0;
+    margin-right: -18px;
+    margin-bottom: -16px;
+    columns: 2;
+  }
+
+  .acordeon__btn {
+    padding: 18px 30px 17px 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .acordeon__btn::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tabs__item {
+    margin-right: 18px;
+
+  }
+
+  .tab-btn {
+    max-width: 80px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 110%;
+  }
+
+  .guests__socials-item {
+    margin-right: 29px;
+  }
+
+  .guests__socials-link svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  .guests__ether {
+    padding: 9px 14px;
+  }
+
+  /*playlists*/
+
+  .playlists {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .playlists__title {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .playlists__genres {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .playlists__checkbox-list {
+    columns: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 127%;
+    overflow: scroll;
+    border-bottom: none;
+  }
+
+  .playlists__checkbox-item {
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+
+  .checkbox__default ~ .checkbox__custom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #999999;
+    border-radius: 100%;
+    transform: translateY(-50%);
+  }
+
+  .playlists__checkbox-wrap {
+    padding-left: 0;
+    padding: 9px 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--violet);
+  }
+
+  .checkbox__default ~ .checkbox__custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--violet);
+    border-radius: 77px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out;
+  }
+
+  .checkbox__default:checked ~ .checkbox__custom {
+    border: none;
   }
 }
