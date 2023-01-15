@@ -71,8 +71,18 @@ const swiper = new Swiper('.swiper', {
 
     768: {
       slidesPerView: 2,
+    },
+
+    320: {
+      slidesPerView: 2.5,
+
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        hiddenClass: '.swiper-button-hidden',
+      },
     }
 
-  }
-
-});
+}});
