@@ -47,4 +47,21 @@
   color: var(--white);
   background-color: var(--violet);
   border-radius: 40px;
+  transition: background-color 0.2s ease-in-out;
 }
+
+.hero__link:hover {
+  background-color: var(--lightViolet);
+}
+
+.hero__link:focus-visible {
+  background-color: var(--lightViolet);
+  outline: 2px solid var(--darkViolet);
+  outline-offset: -2px;
+}
+
+.hero__link:active {
+  background-color: var(--darkViolet);
+}
+
+

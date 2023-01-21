@@ -1,5 +1,5 @@
 .about {
-  padding-top: 92px;
+  padding-top: 94px;
   padding-bottom: 92px;
   background-color: var(--black);
 }
@@ -32,7 +32,7 @@
 
 .about__slider-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about__slide-img-wrap {

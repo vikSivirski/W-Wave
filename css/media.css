@@ -1046,6 +1046,7 @@
   .about {
     position: relative;
     padding-top: 54px;
+    padding-bottom: 54px;
   }
 
   .about__title {
@@ -1066,9 +1067,12 @@
 
   .about__descr {
     padding-bottom: 0;
+    margin-bottom: 27px;
   }
 
   .about__slide-name {
+    padding-right: 10px;
+    margin-bottom: 3px;
     font-size: 14px;
     line-height: 18px;
   }
@@ -1079,8 +1083,9 @@
   }
 
   .about__slide-img-wrap {
+    min-width: 112px;
     max-height: auto;
-}
+  }
 
   .swiper-button-prev {
     display: none;
@@ -1091,11 +1096,98 @@
   }
 
   .about__slider-wrap {
-    width: 113%;
-    /* margin-left: -32px; */
+    width: 125%;
+    margin-left: -32px;
+    margin-bottom: 15px;
   }
 
-  .swiper-slide:last-child {
-    margin-right: 32px;
+  .swiper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .about__slide-img-wrap {
+    margin-bottom: 10px;
+  }
+
+  .about__slide-descr {
+    min-width: 112px;
+    padding-top: 0;
+  }
+
+  .about__textarea {
+    padding: 16px 23px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 20px;
+  }
+
+  .about__textarea::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .about__input {
+    padding: 16px 23px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .about__input::placeholder {
+    font-size: 16px;
+    line-height: 16px
+  }
+
+  .about__form-btn {
+    padding: 17px 44px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .about__form-label {
+    padding-left: 20px;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  /*footer*/
+
+  .footer {
+    padding-top: 51px;
+    padding-bottom: 20px;
+  }
+
+  .footer__socials-list {
+    max-height: 90px;
+  }
+
+  .footer__nav {
+    width: 125%;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-right: -64px;
+    margin-left: -32px;
+    background-color: var(--black);
+  }
+
+  .footer__nav-list {
+    max-width: 270px;
+    margin-left: 32px;
+    columns: 2;
+  }
+
+  .footer__nav-item:not(:nth-child(3n)) {
+    margin-bottom: 15px;
+  }
+
+  .footer__nav-item:nth-child(3n) {
+    margin-bottom: 19px;
+  }
+
+  .footer__nav-link {
+    font-size: 12px;
+    line-height: 12px;
   }
 }

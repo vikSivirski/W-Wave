@@ -32,6 +32,7 @@
 .footer__nav-list {
   margin-right: -109px;
   columns: 3;
+  column-gap: 1em;
 }
 
 .footer__nav-item:not(:nth-child(3n)) {
@@ -39,7 +40,7 @@
 }
 
 .footer__nav-item:not(:nth-child(n + 7)) {
-  margin-right: 109px;
+  margin-right: 91px;
 }
 
 .footer__nav-link {

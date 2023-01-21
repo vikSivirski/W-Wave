@@ -97,8 +97,49 @@
   border: 2px solid var(--violet);
   border-radius: 40px;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.podcasts__more:hover {
+  background-color: var(--violet);
+  color: white;
+}
+
+.podcasts__more:focus-visible {
+  background-color: var(--lightViolet);
 }
 
 .podcasts__more--hidden {
   display: none;
+}
+
+.podcasts__play-btn {
+  stroke: var(--gray);
+  fill: none;
+  transition: stroke 0.2s ease-in-out;
+}
+
+.podcasts__play-btn:hover{
+  stroke: var(--violet);
+}
+
+.podcasts__play-btn:hover svg path {
+  fill: var(--violet);
+}
+
+.podcasts__play-btn:focus-visible{
+  stroke: var(--lightViolet);
+}
+
+.podcasts__play-btn:focus-visible svg path {
+  fill: var(--lightViolet);
+}
+
+.podcasts__play-btn:active{
+  stroke: var(--darkViolet);
+  fill: var(--darkViolet);
+}
+
+.podcasts__play-btn:active svg path {
+  fill: white;
 }

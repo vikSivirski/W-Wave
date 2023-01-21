@@ -1,6 +1,6 @@
 .market {
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding-top: 95px;
+  padding-bottom: 130px;
   background-color: var(--lightBlack);
 }
 
@@ -9,9 +9,23 @@
 }
 
 .market__img-wrap {
+  position: relative;
   display: block;
+  margin-top: 10px;
   width: calc(640 / 1110 * 100%);
   max-height: 562px;
+}
+
+.market__img-wrap::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 155px;
+  height: 155px;
+  background-image: url("../img/market_new.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .market__descr {
@@ -55,6 +69,10 @@
   border: 2px solid var(--gold);
   border-radius: 100px;
 }
+
+/* .market__link:hover {
+
+} */
 
 .market__link-svg {
   vertical-align: middle;
