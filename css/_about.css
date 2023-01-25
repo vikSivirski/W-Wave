@@ -62,12 +62,32 @@
 
 .swiper-button-prev {
   position: absolute;
-  left: -50px;
+  top: 35%;
+  left: -75px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/swiper-prev.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .swiper-button-next {
   position: absolute;
-  right: -50px;
+  top: 35%;
+  right: -75px;
+  width: 42px;
+  height: 42px;
+  background-image: url("../img/swiper-next.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
 
 .about__form {
@@ -88,6 +108,11 @@
   border: 1px solid white;
   border-radius: 30px;
   resize: none;
+  outline: none;
+}
+
+.about__textarea:hover {
+  background-color: var(--lightBlack);
 }
 
 .about__textarea::placeholder {
@@ -106,6 +131,20 @@
   background-color: var(--black);
   border: 1px solid white;
   border-radius: 40px;
+  outline: none;
+  transition: backgroun-color 0.2s ease-in-out;
+}
+
+.about__input:hover {
+  background-color: var(--lightBlack);
+}
+
+.about__input:focus-visible {
+  background-color: var(--lightBlack);
+}
+
+.about__input:active {
+  background-color: var(--black);
 }
 
 .about__input::placeholder {
@@ -127,7 +166,23 @@
   line-height: 20px;
   color: white;
   background-color: var(--violet);
+  border-color: transparent;
   border-radius: 40px;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.about__form-btn:hover {
+  background-color: var(--lightViolet);
+}
+
+.about__form-btn:focus-visible {
+  border-color: var(--violet);
+  background-color: var(--lightViolet);
+}
+
+.about__form-btn:active {
+  background-color: var(--darkViolet);
 }
 
 .about__form-label {
@@ -138,6 +193,16 @@
   line-height: 12px;
   color: white;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.about__form-label:hover {
+  opacity: 0.7;
+}
+
+.about__form-chekbox:focus-visible ~ .custom-checkbox{
+  border-color: var(--violet);
 }
 
 .about__form-chekbox ~ .custom-checkbox {

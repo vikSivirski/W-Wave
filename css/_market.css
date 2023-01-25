@@ -68,11 +68,52 @@
   color: var(--gold);
   border: 2px solid var(--gold);
   border-radius: 100px;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-/* .market__link:hover {
+.market__link:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
 
-} */
+.market__link:focus-visible {
+  background-color: var(--darkGold);
+  color: var(--black);
+}
+
+.market__link:active {
+  border-color: var(--darkGold);
+  background-color: var(--darkGold);
+  color: var(--black);
+}
+
+
+.market__link-svg-path1 {
+  fill: var(--gold);
+  transition: fill 0.2s ease-in-out;
+}
+
+.market__link-svg-path2 {
+  fill: var(--black);
+  transition: fill 0.2s ease-in-out;
+}
+
+.market__link:hover .market__link-svg-path1{
+  fill: var(--black);
+}
+
+.market__link:hover .market__link-svg-path2{
+  fill: var(--gold);
+}
+
+.market__link:active .market__link-svg-path1 {
+  fill: var(--black);
+}
+
+.market__link:active .market__link-svg-path2 {
+  fill: var(--darkGold);
+}
 
 .market__link-svg {
   vertical-align: middle;
