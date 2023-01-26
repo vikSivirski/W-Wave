@@ -116,16 +116,14 @@
   width: calc(825 / 1110 * 100%);
   margin-top: 15px;
   margin-bottom: -30px;
+  margin-right: -30px;
 }
 
 .broadcast__item {
   position: relative;
   margin-bottom: 30px;
-  height: 260px;
-}
-
-.broadcast__item:not(:nth-child(3n)) {
   margin-right: 30px;
+  height: 260px;
 }
 
 .broadcast__item:hover .broadcast__img-wrap {
@@ -178,7 +176,6 @@
   color: var(--gray);
 }
 
-
 .broadcast__img-wrap {
   display: block;
   height: 148px;
@@ -187,6 +184,8 @@
 }
 
 .broadcast__card-content {
+  flex-direction: column;
+  justify-content: space-between;
   padding: 17px 16px;
   outline: 1px solid var(--lightGray);
 }
@@ -202,7 +201,6 @@
 
 .broadcast__announce {
   margin: 0;
-  margin-bottom: 20px;
   font-size: 12px;
   line-height: 12px;
   color: var(--gray);

@@ -197,4 +197,23 @@
   color: var(--lightViolet);
   border: 2px solid var(--lightViolet);
   border-radius: 77px;
+  outline: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.guests__ether:hover {
+  color: white;
+  background-color: var(--lightViolet);
+}
+
+.guests__ether:focus-visible {
+  color: white;
+  background-color: var(--violet);
+  border-color: var(--violet);
+}
+
+.guests__ether:active {
+  color: white;
+  background-color: var(--darkViolet);
+  border-color: var(--darkViolet);
 }
