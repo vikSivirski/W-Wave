@@ -36,11 +36,11 @@
 }
 
 .footer__nav-item:not(:nth-child(3n)) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
-.footer__nav-item:not(:nth-child(n + 7)) {
-  margin-right: 91px;
+.footer__nav-item {
+  margin-right: 89px;
 }
 
 .footer__nav-link {

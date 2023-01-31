@@ -17,7 +17,7 @@
 
 .podcasts__item {
   height: 140px;
-  width: calc(540 / 1110 * 100%);
+  width: calc(535 / 1110 * 100%);
   margin-bottom: 30px;
   background-color: var(--white);
 }
