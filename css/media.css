@@ -967,13 +967,18 @@
     line-height: 12px;
   }
 
+  .playlists__checkbox-container {
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
   .playlists__checkbox-list {
     columns: unset;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 107%;
+    width: 100%;
     height: auto;
     overflow-x: scroll;
     border-bottom: none;
@@ -1235,21 +1240,23 @@
   }
 
   .footer__container {
+    position: relative;
     position: static;
     z-index: -10;
   }
 
   .footer__nav {
     position: relative;
+    z-index: 1;
     width: 100%;
     padding-top: 25px;
     padding-bottom: 35px;
   }
 
-  .footer__nav::after {
+  .footer__nav::before {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     top: 0;
     left: -32px;
     right: -32px;

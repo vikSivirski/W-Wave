@@ -86,3 +86,49 @@ const swiper = new Swiper('.swiper', {
     }
 
 }});
+
+new JustValidate('.about__form', {
+  rules: {
+    checkbox: {
+      required: true
+    },
+    myField: {
+      required: false
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    name: {
+      required: true,
+      minLength: 3
+    },
+  },
+  messages: {
+    name: {
+      minLength: 'Ошибка',
+      required: 'Это поле обязательно для заполнения',
+    },
+    email:{
+      required: 'Это поле обязательно для заполнения',
+      email: 'Ошибка',
+    } ,
+
+    checkbox: {
+      required: 'Это важно'
+    }
+  },
+
+  submitHandler: function (form, values, ajax) {
+
+    ajax({
+      url: 'https://just-validate-api.herokuapp.com/submit',
+      method: 'POST',
+      data: values,
+      async: true,
+      callback: function(response)  {
+        console.log(response)
+      }
+    });
+  },
+});
