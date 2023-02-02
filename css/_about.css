@@ -121,6 +121,11 @@
   color: var(--gray);
 }
 
+.about__input-wrap {
+  position: relative;
+  width: 100%;
+}
+
 .about__input {
   width: calc(445 / 920 * 100%);
   padding: 25px 32px;
@@ -170,6 +175,18 @@
   border-radius: 40px;
   outline: none;
   transition: background-color 0.2s ease-in-out;
+}
+
+.about__input--name {
+  position: relative;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .about__form-btn:hover {
@@ -232,3 +249,4 @@
 .about__form-chekbox:checked ~ .custom-checkbox::after {
   opacity: 1;
 }
+

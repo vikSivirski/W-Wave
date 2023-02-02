@@ -2395,12 +2395,17 @@
     <div class="container">
       <form class="about__form flex" action="">
         <textarea class="about__textarea" placeholder="Что скажете?"></textarea>
-        <input type="text" class="about__input about__input--name" placeholder="Имя" data-validate-field="name">
-        <input type="email" class="about__input about__input--mail" placeholder="Email" data-validate-field="email">
+        <div class="about__input-wrap">
+          <input type="text" class="about__input about__input--name" placeholder="Имя" data-validate-field="name">
+        </div>
+        <div class="about__input-wrap">
+          <input type="email" class="about__input about__input--mail" placeholder="Email" data-validate-field="email">
+        </div>
         <div class="about__form-send flex">
           <button type="submit" class="about__form-btn btn-reset">Отправить</button>
           <label class="about__form-label">
-            <input type="checkbox" class="about__form-chekbox visually-hidden" data-validate-field="checkbox">Согласен на обработку персональных данных
+            <input type="checkbox" class="about__form-chekbox visually-hidden" data-validate-field="checkbox">Согласен
+            на обработку персональных данных
             <span class="custom-checkbox"></span>
           </label>
         </div>
