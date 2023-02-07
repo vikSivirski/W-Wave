@@ -60,6 +60,7 @@
 }
 
 .header__account {
+  position: relative;
   flex-shrink: 0;
 }
 
@@ -74,6 +75,40 @@
   stroke: var(--violet);
   outline: none;
   transition: stroke 0.2s ease-in-out;
+}
+
+.search-form {
+  position: absolute;
+  justify-content: flex-end;
+  top: 50%;
+  right: 128px;
+  width: 308px;
+  height: 24px;
+  background-color: white;
+  visibility: hidden;
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in-out, visibility 0.3s;
+}
+
+.search-form--active {
+  visibility: visible;
+  transform: translateY(-50%) scaleX(1);
+}
+
+.search-form__btn {
+  stroke: var(--violet);
+  margin-left: 5px;
+  outline: none;
+  transition: stroke 0.2s ease-in-out;
+}
+
+.search-form__input {
+  width: calc(280 / 308 * 100%);
+  margin-left: 5px;
+  border: none;
+  border-bottom: 1px solid var(--violet);
+  outline: none;
 }
 
 .header__search-btn:hover {

@@ -50,6 +50,50 @@
   border-top: 1px solid var(--lightGray);
 }
 
+.podcasts__reaction-btn-wrap:not(:last-child) {
+  margin-right: 30px;
+}
+
+.podcasts__reaction-btn-wrap {
+  padding: 0 3px;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.podcasts__reaction-btn {
+  margin-right: 6px;
+  fill: var(--gray);
+  outline: none;
+  transition: fill 0.2s ease-in-out;
+}
+
+.podcasts__reaction-btn-wrap:hover .podcasts__reaction-btn {
+  fill: var(--violet);
+}
+
+.podcasts__reaction-btn-wrap:focus-visible {
+  background-color: var(--lightViolet);
+}
+.podcasts__reaction-btn-wrap:focus-visible .podcasts__reaction-btn {
+  fill: white;
+}
+
+.podcasts__reaction-btn-wrap:hover .podcasts__reaction-counters {
+  color: var(--violet);
+}
+
+.podcasts__reaction-btn-wrap:focus-visible .podcasts__reaction-counters {
+  color: white;
+}
+
+.podcasts__reaction-counters {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+  transition: color 0.2s ease-in-out;
+}
+
 .podcasts__duration {
   margin: 0;
   margin-bottom: 8px;
@@ -73,16 +117,6 @@
   color: var(--gray);
 }
 
-.podcasts__readtion-counter {
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--gray);
-}
-
-.podcasts__readtion-counter:not(:last-child) {
-  margin-right: 30px;
-}
-
 .podcasts__more-wrap {
   justify-content: center;
   width: 100%;
@@ -96,6 +130,7 @@
   color: var(--violet);
   border: 2px solid var(--violet);
   border-radius: 40px;
+  outline: none;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -116,10 +151,11 @@
 .podcasts__play-btn {
   stroke: var(--gray);
   fill: none;
+  outline: none;
   transition: stroke 0.2s ease-in-out;
 }
 
-.podcasts__play-btn:hover{
+.podcasts__play-btn:hover {
   stroke: var(--violet);
 }
 
@@ -127,7 +163,7 @@
   fill: var(--violet);
 }
 
-.podcasts__play-btn:focus-visible{
+.podcasts__play-btn:focus-visible {
   stroke: var(--lightViolet);
 }
 
@@ -135,7 +171,7 @@
   fill: var(--lightViolet);
 }
 
-.podcasts__play-btn:active{
+.podcasts__play-btn:active {
   stroke: var(--darkViolet);
   fill: var(--darkViolet);
 }

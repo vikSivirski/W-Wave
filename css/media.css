@@ -950,6 +950,10 @@
     padding-bottom: 48px;
   }
 
+  .playlists-container {
+    padding-right: 0;
+  }
+
   .playlists__content {
     width: 100%;
     max-width: unset;
@@ -1033,6 +1037,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 0;
+    margin-right: 32px;
     margin-bottom: 30px;
   }
 
@@ -1068,6 +1073,10 @@
   .playlists__warning {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .playlists__warning-wrap {
+    margin-right: 32px;
   }
 
   .playlists__warning-company {

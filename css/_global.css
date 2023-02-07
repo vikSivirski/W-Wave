@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -22,6 +23,15 @@ a {
 body {
   min-width: 320px;
   font-family: "Muller", sans-serif;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .visually-hidden {
