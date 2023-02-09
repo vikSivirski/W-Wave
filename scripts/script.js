@@ -22,6 +22,8 @@ searchBtnActive.addEventListener('click', function() {
 
 });
 
+//Счетчик лайков лайков
+
 let likeBtn = document.querySelectorAll('.like');
 let shareBtn = document.querySelectorAll('.share');
 let listeningsBtn = document.querySelectorAll('.podcasts__play-btn')
