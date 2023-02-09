@@ -108,7 +108,8 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transform: scale(1);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .playlists__item-content {
@@ -134,6 +135,25 @@
 
 .playlists__item:hover .playlists__img-wrap::after {
   opacity: 1;
+}
+
+.playlists__item:active .playlists__item-content {
+  background-color: var(--lightViolet);
+  border-color: var(--lightViolet);
+}
+
+.playlists__item:active .playlists__band,
+.playlists__item:active .playlists__band-album {
+  color: white;
+}
+
+.playlists__item:active .playlists__img {
+  filter: brightness(50%);
+}
+
+.playlists__item:active .playlists__img-wrap::after {
+  opacity: 1;
+  transform: scale(1.15);
 }
 
 .playlists__item-link::after {

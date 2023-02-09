@@ -77,11 +77,3 @@ input::-webkit-search-results-decoration {
   line-height: 100%;
   color: var(--black);
 }
-
-.disabled {
-  pointer-events: none;
-}
-
-/* .swiper-button-hidden {
-  display: none;
-} */

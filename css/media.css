@@ -282,24 +282,29 @@
   .header__menu {
     display: block;
     columns: 2;
-    max-width: 265px;
-
+    width: 100%;
+    /* max-width: 265px; */
   }
 
   .header__nav-wrap {
     position: absolute;
+    z-index: 9;
     top: 58px;
     left: 0;
-    width: 100%;
     height: 100vh;
     transform: translateY(-200%);
     transition: transform 0.4s ease-in-out;
   }
 
   .header__nav {
-    max-width: 100%;
+    max-width: unset;
+    width: 100%;
+    height: 100%;
     margin-right: 0;
-    padding: 106px 114px;
+    padding-top: 106px;
+    padding-left: 114px;
+    padding-right: 40%;
+    padding-bottom: auto;
     background-color: var(--menuGray);
   }
 
@@ -471,6 +476,8 @@
 
   .market__img-wrap {
     width: 100%;
+    height: auto;
+    max-height: unset;
     padding-bottom: 35px;
   }
 
@@ -567,6 +574,8 @@
   /*header*/
 
   .header__container--media {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -581,13 +590,12 @@
     max-width: 87px;
   }
 
-  .header__container--media {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .header__search-btn {
     margin-right: 0;
+  }
+
+  .search-form {
+    right: 0;
   }
 
   .header__account-btn {
@@ -599,10 +607,10 @@
     padding: 8px 24px;
   }
 
-
   .header__nav {
     flex-direction: column;
     padding: 61px 32px;
+    height: auto;
   }
 
   .subheader__menu {
@@ -615,8 +623,11 @@
 
   .subheader__menu--media {
     display: block;
-    column-count: 2;
+    max-width: unset;
+    margin: 0;
+    width: 100%;
     height: 37%;
+    column-count: 2;
     padding: 30px 32px;
     background-color: white;
   }
@@ -646,10 +657,22 @@
     line-height: 16px;
     color: var(--violet);
     border-bottom: 1px solid var(--lightGray);
+    transition: color 0.2s ease-in-out;
+  }
+
+  .header__accordion-btn:hover {
+    color: var(--lightViolet);
   }
 
   .header__accordion-svg {
+    vertical-align: middle;
     max-width: 15px;
+    transform: rotate(0);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .is-active .header__accordion-svg{
+    transform: rotate(225deg);
   }
 
   .header__ac-title {
@@ -1037,7 +1060,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 0;
-    margin-right: 32px;
+    padding-right: 32px;
+    margin-right: -30px;
     margin-bottom: 30px;
   }
 
@@ -1045,6 +1069,7 @@
     display: flex;
     flex-direction: column;
     width: 45%;
+    margin-right: 30px;
     max-width: 113px;
     margin-bottom: 30px;
   }

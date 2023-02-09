@@ -123,7 +123,7 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2,
     },
 
-    320: {
+    240: {
       slidesPerView: 2.1,
 
       spaceBetween: 22,

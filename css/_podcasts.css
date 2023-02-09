@@ -142,6 +142,7 @@
 
 .podcasts__more:focus-visible {
   background-color: var(--lightViolet);
+  color: white;
 }
 
 .podcasts__more--hidden {
