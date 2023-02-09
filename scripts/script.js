@@ -22,7 +22,7 @@ searchBtnActive.addEventListener('click', function() {
 
 });
 
-//Счетчик лайков лайков
+//Счетчик лайков
 
 let likeBtn = document.querySelectorAll('.like');
 let shareBtn = document.querySelectorAll('.share');
